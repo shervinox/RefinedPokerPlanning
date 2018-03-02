@@ -1,4 +1,4 @@
-package com.appestan.refinedpokerplanning;
+package com.appestan.refinedplanningpoker;
 
 /**
  * Created with love and care by shervin on 03/02/2018.

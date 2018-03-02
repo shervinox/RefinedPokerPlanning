@@ -1,4 +1,4 @@
-package com.appestan.refinedpokerplanning;
+package com.appestan.refinedplanningpoker;
 
 import org.junit.Test;
 

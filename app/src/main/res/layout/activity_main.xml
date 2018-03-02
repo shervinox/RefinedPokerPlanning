@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/WHITE_MAIN_BG"
-    tools:context="com.appestan.refinedpokerplanning.MainActivity">
+    tools:context="com.appestan.refinedplanningpoker.MainActivity">
 
     <TextView
         android:id="@+id/estimate_question_textview"
@@ -23,6 +23,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
         android:animateFirstView="false"
         android:autoStart="false"
         android:clickable="true"
@@ -42,6 +43,7 @@
         android:id="@+id/flipView_1"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:animateFirstView="false"
         android:autoStart="false"
         android:clickable="false"
@@ -51,18 +53,19 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_1_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/estimate_question_textview"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_1_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flipView_2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
         android:animateFirstView="false"
         android:autoStart="false"
         android:clickable="true"
@@ -72,11 +75,11 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_2_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toRightOf="@id/flipView_1"
         app:layout_constraintTop_toBottomOf="@id/estimate_question_textview"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_2_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flipView_3"
@@ -93,11 +96,11 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_3_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintRight_toLeftOf="@id/flipView_4"
         app:layout_constraintTop_toBottomOf="@id/flipView_1"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_3_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flipView_4"
@@ -113,12 +116,12 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_4_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/flipView_1"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_4_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -136,11 +139,11 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_5_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toRightOf="@id/flipView_4"
         app:layout_constraintTop_toBottomOf="@id/flipView_1"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_5_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flipView_6"
@@ -157,11 +160,11 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_6_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintRight_toLeftOf="@id/flipView_7"
         app:layout_constraintTop_toBottomOf="@id/flipView_4"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_6_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/flipView_7"
@@ -177,12 +180,12 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_7_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/flipView_4"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_7_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
 
     <eu.davidea.flipview.FlipView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -200,11 +203,11 @@
         app:animationDuration="100"
         app:checked="false"
         app:frontBackgroundColor="@color/FRONT_FLIPVIEW_BG"
-        app:frontLayout="@layout/flipview_front_8_layout"
+        app:frontLayout="@layout/flipview_front_0_layout"
         app:layout_constraintLeft_toRightOf="@id/flipView_7"
         app:layout_constraintTop_toBottomOf="@id/flipView_4"
         app:rearBackgroundColor="@color/REAR_FLIPVIEW_BG"
-        app:rearLayout="@layout/flipview_rear_8_layout" />
+        app:rearLayout="@layout/flipview_rear_0_layout" />
 
     <TextView
         android:id="@+id/estimate_title_textview"
@@ -223,6 +226,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
         android:animateFirstView="false"
         android:autoStart="false"
         android:clickable="false"
@@ -255,6 +259,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
         android:animateFirstView="false"
         android:autoStart="false"
         android:clickable="false"

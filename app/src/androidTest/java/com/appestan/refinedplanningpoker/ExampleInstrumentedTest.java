@@ -1,4 +1,4 @@
-package com.appestan.refinedpokerplanning;
+package com.appestan.refinedplanningpoker;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

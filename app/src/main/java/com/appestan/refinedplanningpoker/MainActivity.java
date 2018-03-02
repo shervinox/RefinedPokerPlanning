@@ -1,7 +1,10 @@
-package com.appestan.refinedpokerplanning;
+package com.appestan.refinedplanningpoker;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements UIView, View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Utils.setEstimateNumbersToFlipViews(this);
         Utils.setOnClickListeners(this);
         preparer = new Preparer(this);
     }
@@ -28,11 +32,11 @@ public class MainActivity extends AppCompatActivity implements UIView, View.OnCl
         this.preparer.estimated(selectedFlipView);
     }
 
-
     @Override
     public void setEstimateQuestionTo(String questionString) {
         ((TextView) this.findViewById(R.id.estimate_question_textview)).setText(questionString);
     }
+
 
     @Override
     public void displayResultInResultFlipView(String estimateFloat, String varianceFloat) {
@@ -90,6 +94,24 @@ public class MainActivity extends AppCompatActivity implements UIView, View.OnCl
     @Override
     public void logicalErrorToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.custom_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_reset_action:
+                this.preparer.reset();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override

@@ -1,13 +1,13 @@
-package com.appestan.refinedpokerplanning;
+package com.appestan.refinedplanningpoker;
 
 import android.util.Log;
 import android.view.View;
 
 import eu.davidea.flipview.FlipView;
 
-import static com.appestan.refinedpokerplanning.CURRENT_STATE.ENTERING_BEST_CASE;
-import static com.appestan.refinedpokerplanning.CURRENT_STATE.ENTERING_NOMINAL_CASE;
-import static com.appestan.refinedpokerplanning.CURRENT_STATE.ENTERING_WORST_CASE;
+import static com.appestan.refinedplanningpoker.CURRENT_STATE.ENTERING_BEST_CASE;
+import static com.appestan.refinedplanningpoker.CURRENT_STATE.ENTERING_NOMINAL_CASE;
+import static com.appestan.refinedplanningpoker.CURRENT_STATE.ENTERING_WORST_CASE;
 
 /**
  * Created with love and care by shervin on 03/02/2018.
@@ -67,6 +67,7 @@ class Preparer {
 
                 ((FlipView) selectedFlipView).flip(!((FlipView) selectedFlipView).isFlipped());
                 displayResultOfEstimation();
+                mainActivity.setEstimateQuestionTo("Estimating is Complete");
                 currentState = ENTERING_BEST_CASE;
 
                 break;
@@ -76,7 +77,6 @@ class Preparer {
     private boolean checkLogic() {
         switch (currentState) {
             case ENTERING_BEST_CASE:
-//                refinedEstimator
                 return true;
             case ENTERING_NOMINAL_CASE:
                 if (refinedEstimator.getNominalCaseEstimateInt() <= refinedEstimator.getBestCaseEstimateInt()) {
