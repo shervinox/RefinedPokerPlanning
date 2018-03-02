@@ -7,3 +7,6 @@ For further information on this matter read the Estimation chapter of “The Cle
 ## How it Works
 
 Instead of estimating a backlog/or task with a single number, you have to provide 3 estimations, one for the Best case, another for Nominal case, and the last one for Worst case. As Result you will be provided with refined estimation by simple yet effective formula engineered by Uncle Bob. plus a deviation which can inform developer or product owner how much longer(or shorter) could possibly a given task take time.
+
+## Screenshots
+![alt text](http://joyfulsilence.com/msc/RefinedPlanningPoker/Phone%20Screenshot%202.jpg)
