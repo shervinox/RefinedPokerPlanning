@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Refined Poker Planning</string>
+    <string name="nominal_case_question">Estimate Normal Case:</string>
+    <string name="worst_case_question">Estimate Worst Case:</string>
+</resources>

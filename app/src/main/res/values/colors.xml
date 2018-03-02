@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="WHITE_MAIN_BG">#fcfafa</color>
+    <color name="FRONT_FLIPVIEW_BG">#c8d3d5</color>
+    <color name="REAR_FLIPVIEW_BG">#0cca4a</color>
+</resources>
