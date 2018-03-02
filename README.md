@@ -1,7 +1,7 @@
 # RefinedPokerPlannig
 
-Planing poker can be refined. Estimating backlogs/tasks in Scrum can be real pain. However there are techniques in which you will not only get better understanding of how estimating in scrum works, but also estimate as a distribution, not a single fixed number.
-This is exactly what this android app is about, to eneable you estimate more precisely. 
+Planing poker can be refined. Estimating backlogs/tasks in Scrum can be real pain. However there are techniques in which you will not only get better understanding of how estimating in scrum works, but also estimate as a distribution, not a single fixed number.<br />
+This is exactly what this android app is about, to eneable you estimate more precisely. <br />
 Remember this is what business side of your company hears as “Commitment”, not “Estimate”. Thats why its so crucial.
 For further information on this matter read the Estimation chapter of “The Clean Coder” by Robert C. Martin.
 ## How it Works
